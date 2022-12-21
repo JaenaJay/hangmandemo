@@ -23,7 +23,7 @@ window.addEventListener('load',()=>{                                            
         const secretWord= game.secretWord                                           //5. this used to be const secretword=gamepicksecretword() which gave out an error ..but call out game.picksecretword()function fist above 
         console.log(secretWord)
         
-        target.classList.add('hidden-class')   
+        btnWord.classList.add('hidden-class')   
                                     //no dot == classlist
         hangmanImage.src=`./public/images/hangman-images/hangman-1.png`                    //this will reset the image to the first image    
         wrongGuessesContainer.innerHTML=''                                                //this will remove the wrong guesses to restart
