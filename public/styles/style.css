@@ -1,0 +1,143 @@
+h1,
+h2,
+h3{
+ margin: 0;
+ padding: 0;
+
+}
+
+body{
+    width: 800px;
+    margin:0 auto;
+    /* background-color: red; */
+}
+
+.game__container-header{
+    text-align: center;
+    height: 100px;
+
+}
+
+.game__container--header h1{
+    
+    font-size: 50px ;
+
+}
+
+.game__container--game-control{
+    text-align: center;
+    height:100px;
+  
+
+}
+
+.game__container--game-control button{
+    font-size: 30px;
+}
+
+
+.game__container-body{
+    display: flex;
+    flex-wrap: nowrap;
+    width:100%;
+    height:auto  ;
+   
+}
+
+.game__container--body-left{
+    border-right:1px solid #000 ;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 50%;
+    align-items: center;
+}
+
+.game__container--body--left-alphakey-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.letter-box{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    cursor: pointer;
+}
+
+.game__container--body--left-secret-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin:40px 0;
+}
+
+.game__container--body-right{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-content:center ;
+
+
+   
+}
+
+.game__container--body--right-wrong-guess-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+
+}
+.game__container--body--right-guess-container{
+    
+}
+
+.game__container--body--right-guess-container-images{
+
+}
+
+.hidden-box{
+    width:20px;
+    height: 50px;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.hidden-class{
+    visibility: hidden;
+}
+
+.green-background{
+    background-color: green;
+}
+
+.red-background{
+    background-color: red;
+}
+
+.game__container--game--messages{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+
+.empty-box{
+    border-bottom: 0px solid #000;
+
+
+}
+
+#hangman-image{
+    height: 400px;
+}

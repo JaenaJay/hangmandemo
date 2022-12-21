@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/styles/style.css" />
+    <title>Hangman</title>
+  </head>
+  <body>
+    <section class="game__container">
+      <div class="game__container-header">
+        <h1>Hangman</h1>
+      </div>
+      <div class="game__container--game-control">
+        <button id="btn__new-word">New Game</button>
+      </div>
+      <div class="game__container--game--messages"></div>
+      <div class="game__container-body hidden-class">
+        <div class="game__container--body-left">
+          <h3>Secret Word</h3>
+          <div class="game__container--body--left-secret-container"></div>
+          <div class="game__container--body--left-alphakey-container"></div>
+        </div>
+        <div class="game__container--body-right">
+          <div class="game__container--body--right-guess-container">
+            <div class="game__container--body--right-guess-container-images" ><img src="./public/images/hangman-images/hangman-1.png" id="hangman-image"></div>
+
+          </div>
+          <div class="game__container--body--right-wrong-guess-container"></div>
+        </div>
+      </div>
+    </section>
+    <script src="./public/scripts/data.js"></script>
+    <script src="./public/scripts/game.js"></script>
+    <script src="./public/scripts/index.js"></script>
+  </body>
+</html>
