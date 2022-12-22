@@ -124,6 +124,7 @@ window.addEventListener('load',()=>{                                            
             console.log(hangmanImage.src)
             hangmanImage.src=`./public/images/hangman-images/hangman-${game.wrongGuesses.length+1}.png`
             renderWrongGuesses()
+          
 
 
 
@@ -138,6 +139,7 @@ window.addEventListener('load',()=>{                                            
 
     function endGame(){
         gameMessages.innerHTML= 'Game Over!'
+        wrongGuessesContainer.innerHTML=`You lose! The secret word is ${game.secretWord}.`
         newButton.classList.remove('hidden-class')
         newButton.innerHTML='Restart Game'
         removeClickInput()
